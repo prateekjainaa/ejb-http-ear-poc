@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+                        
+    
+    
+    
+    
+    <wb-module deploy-name="poc-ear">
+                                                
+        
+        
+        
+        
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+                                                
+        
+        
+        
+        
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="rs-war.war" deploy-path="/" handle="module:/resource/rs-war/rs-war">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="remote-ejb.jar" deploy-path="/" handle="module:/resource/remote-ejb/remote-ejb">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="remote-ejb-api.jar" deploy-path="/lib" handle="module:/resource/remote-ejb-api/remote-ejb-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="remote-ejb2-api.jar" deploy-path="/lib" handle="module:/resource/remote-ejb2-api/remote-ejb2-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wildfly-http-client-common.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/wildfly/wildfly-http-client/wildfly-http-client-common/1.0.18.Final-redhat-00001/wildfly-http-client-common-1.0.18.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="undertow-core.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/io/undertow/undertow-core/2.0.28.SP1-redhat-00001/undertow-core-2.0.28.SP1-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-logging.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/logging/jboss-logging/3.4.1.Final-redhat-00001/jboss-logging-3.4.1.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xnio-api.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/xnio/xnio-api/3.7.7.Final-redhat-00001/xnio-api-3.7.7.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xnio-nio.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/xnio/xnio-nio/3.7.7.Final-redhat-00001/xnio-nio-3.7.7.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-marshalling-river.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/marshalling/jboss-marshalling-river/2.0.9.Final-redhat-00001/jboss-marshalling-river-2.0.9.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-marshalling.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/marshalling/jboss-marshalling/2.0.9.Final-redhat-00001/jboss-marshalling-2.0.9.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wildfly-common.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/wildfly/common/wildfly-common/1.5.1.Final-redhat-00001/wildfly-common-1.5.1.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wildfly-client-config.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/wildfly/client/wildfly-client-config/1.0.1.Final-redhat-00001/wildfly-client-config-1.0.1.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wildfly-elytron.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/wildfly/security/wildfly-elytron/1.10.4.Final-redhat-00001/wildfly-elytron-1.10.4.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wildfly-http-naming-client.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/wildfly/wildfly-http-client/wildfly-http-naming-client/1.0.18.Final-redhat-00001/wildfly-http-naming-client-1.0.18.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wildfly-naming-client.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/wildfly/wildfly-naming-client/1.0.11.Final-redhat-00001/wildfly-naming-client-1.0.11.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-remoting.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/remoting/jboss-remoting/5.0.16.Final-redhat-00001/jboss-remoting-5.0.16.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-threads.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/threads/jboss-threads/2.3.3.Final-redhat-00001/jboss-threads-2.3.3.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-ejb-api_3.2_spec.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/spec/javax/ejb/jboss-ejb-api_3.2_spec/2.0.0.Final-redhat-00001/jboss-ejb-api_3.2_spec-2.0.0.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-transaction-api_1.3_spec.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/spec/javax/transaction/jboss-transaction-api_1.3_spec/2.0.0.Final-redhat-00002/jboss-transaction-api_1.3_spec-2.0.0.Final-redhat-00002.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-ejb3-ext-api.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/ejb3/jboss-ejb3-ext-api/2.3.0.Final-redhat-00001/jboss-ejb3-ext-api-2.3.0.Final-redhat-00001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+                                            
+    
+    
+    
+    
+    </wb-module>
+                    
+
+
+
+
+</project-modules>

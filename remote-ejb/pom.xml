@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.jboss.eap.quickstarts</groupId>
+    <artifactId>ejb-http-ear-poc</artifactId>
+    <version>7.3.0.GA</version>
+  </parent>
+  <artifactId>remote-ejb</artifactId>
+  <dependencies>
+
+        <!-- Import the CDI API, we use provided scope as the API is included in JBoss EAP -->
+        <dependency>
+            <groupId>jakarta.enterprise</groupId>
+            <artifactId>jakarta.enterprise.cdi-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Import the Common Annotations API (JSR-250), we use provided scope
+            as the API is included in JBoss EAP -->
+        <dependency>
+            <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Import the EJB API, we use provided scope as the API is included in JBoss EAP -->
+        <dependency>
+            <groupId>org.jboss.spec.javax.ejb</groupId>
+            <artifactId>jboss-ejb-api_3.2_spec</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        
+        
+        <dependency>
+            <groupId>org.jboss.eap.quickstarts</groupId>
+            <artifactId>remote-ejb-api</artifactId>
+          
+        </dependency>
+         <dependency>
+            <groupId>org.jboss.eap.quickstarts</groupId>
+            <artifactId>remote-ejb2-api</artifactId>
+          
+        </dependency>
+
+<!-- To enable ejb over http -->
+<dependency>
+        <groupId>org.wildfly.wildfly-http-client</groupId>
+        <artifactId>wildfly-http-client-common</artifactId>                  
+</dependency>
+<dependency>
+        <groupId>org.wildfly.wildfly-http-client</groupId>
+        <artifactId>wildfly-http-naming-client</artifactId>                 
+ </dependency>
+
+
+<dependency>
+	
+	<groupId>org.jboss.ejb3</groupId>
+        <artifactId>jboss-ejb3-ext-api</artifactId>
+	
+</dependency>
+
+
+
+
+    </dependencies>
+
+  <build>
+	  <plugins>
+		  <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ejb-plugin</artifactId>
+                <configuration>
+                    <ejbVersion>3.2</ejbVersion>
+                    <generateClient>true</generateClient>
+                </configuration>
+            </plugin>
+	  </plugins>
+	  
+  </build>
+  
+  
+</project>
